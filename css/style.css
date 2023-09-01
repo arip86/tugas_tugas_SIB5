@@ -1,0 +1,65 @@
+/* ini adalah file css pertama */
+/* menggunakan selector tag*/
+p {
+    color: brown;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+body{
+    background-color: khaki;
+    /* ini adalah pemanggilan image didalam background*/
+    background-image: url('../images/Bintang.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0cm 3cm;
+}
+/*grouping */
+fieldset, legend {
+    border: red groove 5px;
+    border-radius: 10px;
+}
+legend{
+    padding: 10px;
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    font-size: 14pt;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+}
+/* ini adalah contoh selector id */
+/* contoh 1 dikhususkan untuk tag div*/
+div#menu {
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+padding: 10px;
+
+}
+/* contoh 2 dapat masuk ke semua tag asalkan dipanggil id didalam tag*/
+/* #menu {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    
+    } */
+/*class */
+a.item:link, a.item:visited, a.item:active{
+    text-decoration: none;
+    font-size: 14pt;
+    color: #000000;
+    border: 2px solid white;
+    padding: 5px;
+    background-color: white;
+}
+a.item:hover{
+color: red;
+font-size: 20pt;
+font-weight: bold;
+font-family: 'Courier New', Courier, monospace;
+/* float: left; */
+padding-right: 10px;
+background-color: aqua;
+}

@@ -1,0 +1,51 @@
+/*css universal */
+* {
+box-sizing: border-box;
+}
+
+.header {
+    background-image: url('../images/header.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.navbar{
+    overflow:hidden;
+    background-color: blue;
+}
+.navbar a{
+    float: left ;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: white;
+    color: black;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+.column.side{
+    width: 25%;
+}
+.column.middle {
+    width: 50%;
+}
+/* clear float dan memisahkan dari column sebelumnya */
+.row::after{
+content:  "";
+display: table;
+clear: both; /* membersihkan float sebelumnya */
+}
+.footer {
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+}
