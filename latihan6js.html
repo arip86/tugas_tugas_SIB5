@@ -1,0 +1,25 @@
+<script>
+    let siswa = "Budi Santoso";
+    let nilai = 75;
+    let grade = " ";
+    let predikat = "";
+    //if multi kondisi
+    if(nilai > 85 && nilai <= 100 ) grade = "A";
+    else if (nilai > 75 && nilai <= 85) grade = "B";
+    else if (nilai >= 60 && nilai <= 75) grade = "C";
+    else if (nilai > 30 && nilai < 60 ) grade = "D";
+    else if (nilai >= 0 && nilai <=30 ) grade = "E";
+    else grade = " ";
+
+    switch(grade){
+        case "A" : predikat = "Sempurna"; break;
+        case "B" : predikat = "Baik"; break;
+        case "C" : predikat = "Cukup"; break;
+        case "D" : predikat = "Kurang"; break;
+        case "E" : predikat = "Buruk"; break;
+        default : predikat = " "; break;
+    }
+
+    document.write("Siswa bernama : " + siswa + " Dengan Nilai : " + nilai +
+     " Gradenya : " + grade + " Dan Predikatnya : " + predikat);
+</script>
