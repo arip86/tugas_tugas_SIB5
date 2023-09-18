@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/style1.css">
+    
+    <script type="text/javascript">
+        $("document").ready(function(){
+            $("#div1").mouseover(function(){
+                $(this).css({
+                    background: "url('https://media.istockphoto.com/id/1217649450/id/foto/ayam-atau-ayam-di-padang-rumput-hijau.webp?b=1&s=612x612&w=0&k=20&c=_Zp4o6yBVEBywCRRb4wwaA8w928AqdLlt-O1f4NjuhM=')"
+                });
+            });
+            $("div").mouseout(function(){
+                $(this).css({
+                    background: "blue"
+                });
+            });
+            $("#div2").mouseover(function(){
+                $(this).css({
+                    background: "url('images/bebek.jpeg')"
+                });
+            });
+            $("div").mouseout(function(){
+                $(this).css({
+                    background: "blue"
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    
+    <h2>Letakan kursor ke masing-masing kotak untuk melihat gambar</h2>
+
+    <div id="div1">Hewan Ayam</div>
+    <div id="div2">Hewan Bebek</div>
+    <div id="div3">Hewan Burung</div>
+</body>
+</html>

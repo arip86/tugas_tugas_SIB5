@@ -1,0 +1,21 @@
+h2{
+    text-align: center;
+    margin: 100px 50px;
+}
+body{
+    text-align: center;
+    margin: auto;
+    background-color: antiquewhite;
+}
+#div1, #div2, #div3 {
+    display: inline-block;
+    margin: auto;
+    width: 30%;
+    color:aqua;
+    border: 3px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: blue;
+    height: 200px;
+    cursor: pointer;
+}
