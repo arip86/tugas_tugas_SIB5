@@ -1,0 +1,2 @@
+//melihat seluruh database
+SHOW DATABASES;
