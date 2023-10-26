@@ -21,6 +21,18 @@ public function simpan($data){
     $ps = $this->koneksi->prepare($sql);
     $ps->execute($data);
 }
+public function getJenis($id){
+    $sql = "SELECT * FROM jenis_produk WHERE id = ?";
+    $ps = $this->koneksi->prepare($sql);
+    $ps->execute([$id]);
+    $rs = $ps->fetch();
+    return $rs;
+}
+public function ubah($data){
+    $sql = "UPDATE jenis_produk SET nama=? WHERE id = ? ";
+    $ps = $this->koneksi->prepare($sql);
+    $ps->execute($data);
+}
 }
 
 ?>

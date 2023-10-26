@@ -68,10 +68,16 @@ $data_produk = $model->dataProduk();
                                             <td><?= $produk['min_stok'] ?></td>
                                             <td><?= $produk['jenis'] ?></td>
                                             <td>
-                                                <form>
+                                                <form action="produk_controller.php" method="POST">
                                                     <a href="index.php?url=produk_detail&id=<?= $produk['id'] ?>">
                                                         <button type="button" class="btn btn-info btn-sm">Detail</button>
                                                     </a>
+                                                    <a href="index.php?url=produk_form&idedit=<?= $produk['id']?>">
+                                                        <button type="button" class="btn btn-warning btn-sm">Ubah</button>
+                                                    </a>
+                                                    <button type="submit" class="btn btn-danger btn-sm" name="proses" value="hapus" 
+                                                    onclick="return confirm('anda Yakin akan menghapus')" >Hapus</button>
+                                                    <input type="hidden" name="idx" value="<?= $produk ['id']?> ">
                                                 </form>
                                             </td>
                                     </tr>
