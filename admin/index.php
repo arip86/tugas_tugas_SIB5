@@ -4,6 +4,8 @@ include_once 'koneksi.php';
 include_once 'models/Jenis_produk.php';
 include_once 'models/Kartu.php';
 include_once 'models/Produk.php';
+
+
 $sesi = $_SESSION['MEMBER'];
 if(isset($sesi)){
 
@@ -40,6 +42,6 @@ include_once 'menu.php';
 
 include_once 'bottom.php';
 } else {
-    echo '<script> alert("anda tidak boleh masuk");history.back();</script>';
+    echo "<script> alert('anda tidak boleh masuk');history.back();</script>";
 }
 ?>

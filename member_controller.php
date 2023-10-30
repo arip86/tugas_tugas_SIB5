@@ -14,9 +14,10 @@ $rs = $obj->cekLogin($data);
 
 if(!empty($rs)){
     $_SESSION['MEMBER'] = $rs;
-    header('Location:admin/index.php?url=produk');
+    header('location:admin/index.php?url=produk');
 } else {
-    header('Location:index.php?hal=home');
+    header('location:index.php?hal=home');
+    // echo '<script> alert("user/password anda salah");history.back();</script>';
 }
 
 ?>

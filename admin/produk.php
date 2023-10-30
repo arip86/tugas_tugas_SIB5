@@ -2,8 +2,8 @@
 $model = new Produk();
 $data_produk = $model->dataProduk();
 
-$member = $_SESSION['MEMBER'];
-if(isset($member)){
+// $member = $_SESSION['MEMBER'];
+// if(isset($member)){
 
 
 ?>
@@ -77,12 +77,19 @@ if(isset($member)){
                                                     <a href="index.php?url=produk_detail&id=<?= $produk['id'] ?>">
                                                         <button type="button" class="btn btn-info btn-sm">Detail</button>
                                                     </a>
+                                                    <?php
+                                                    if ($sesi['role'] != 'staff'){
+                                                        ?>
+                                                    
                                                     <a href="index.php?url=produk_form&idedit=<?= $produk['id']?>">
                                                         <button type="button" class="btn btn-warning btn-sm">Ubah</button>
                                                     </a>
+
                                                     <button type="submit" class="btn btn-danger btn-sm" name="proses" value="hapus" 
                                                     onclick="return confirm('anda Yakin akan menghapus')" >Hapus</button>
                                                     <input type="hidden" name="idx" value="<?= $produk ['id']?> ">
+                                                    <?php  }
+                                                    ?>
                                                 </form>
                                             </td>
                                     </tr>
@@ -96,8 +103,9 @@ if(isset($member)){
                         </div>
                     </div>
                 </main>
-            <?php } 
-            else {
-                echo '<script> alert("anda tidak boleh masuk");history.back();</script>';
-            }
+            <?php 
+            // } 
+            // else {
+            //     echo "<script> alert('anda tidak boleh masuk');history.back();</script>";
+            // }
             ?>

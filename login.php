@@ -34,7 +34,7 @@ require_once 'models/Member.php';
 				<div class="col-lg-6">
 					<div class="login_form_inner">
 						<h3>Log in to enter</h3>
-						<form class="row login_form" action="member_controller.php" method="post" id="contactForm" novalidate="novalidate">
+						<form class="row login_form" action="member_controller.php" method="POST" id="contactForm" novalidate="novalidate">
 							<div class="col-md-12 form-group">
 								<input type="text" class="form-control" id="name" name="username" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
 							</div>
