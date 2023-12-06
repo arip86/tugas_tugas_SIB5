@@ -13,6 +13,7 @@
         "laravel/tinker": "^2.8",
         "laravel/ui": "^4.2",
         "maatwebsite/excel": "^3.1",
+        "midtrans/midtrans-php": "^2.5",
         "phpoffice/phpspreadsheet": "^1.29",
         "psr/simple-cache": "1.0",
         "realrashid/sweet-alert": "^7.1"

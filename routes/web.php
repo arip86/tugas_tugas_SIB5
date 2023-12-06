@@ -32,6 +32,10 @@ Route::get('add-to-cart/{id}', [ShopController::class, 'addToCart'])->name('add.
 Route::patch('update-cart', [ShopController::class, 'update'])->name('update.cart');
 Route::delete('remove-from-cart', [ShopController::class, 'remove'])->name('remove.from.cart');
 
+//route sementara api
+Route::get('/produkapi', [ProdukController::class, 'apiProduk']);
+Route::get('/produkapi/{id}', [ProdukController::class, 'apiProdukDetail']);
+
 Route::get('/salam', function(){
     return "Assalamualaikum selamat belajar Laravel";
 });

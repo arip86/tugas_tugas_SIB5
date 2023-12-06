@@ -16,12 +16,17 @@
   <meta name="description" content="" />
   <meta name="keywords" content="bootstrap, bootstrap4" />
 
-		<!-- Bootstrap CSS -->
+	
+  
+ 
+  <!-- Bootstrap CSS -->
+
 		<link href="{{asset('front/css/bootstrap.min.css')}}" rel="stylesheet">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<link href="{{asset('front/css/tiny-slider.css')}}" rel="stylesheet">
 		<link href="{{asset('front/css/style.css')}}" rel="stylesheet">
 		<!-- cart -->
+
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -109,7 +114,7 @@
 									@empty($details['foto'])
                                     <img src="{{ url('admin/img/nophoto.jpg') }}" />
 									@else 
-									<img src="{{ url('admin/img') }}/ {{$details['foto']}}" />
+									<img src="{{ url('admin/img')}}/{{$details['foto']}}" />
 									@endempty
 
                                 </div>
@@ -250,6 +255,8 @@
 			</div>
 		</footer>
 		<!-- End Footer Section -->	
+								<!-- midtrans -->
+	
 
 
 		<script src="{{asset('front/js/bootstrap.bundle.min.js')}}"></script>

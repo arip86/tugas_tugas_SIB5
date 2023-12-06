@@ -37,7 +37,7 @@
 						@foreach($produk as $product)
 					<!-- Start Column 2 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="cart.html">
+						<a class="product-item" href="{{ route('add.to.cart', $product->id) }}">
 						@empty($product->foto)
 						<img src="{{url('admin/img/nophoto.jpg')}}" class="img-fluid product-thumbnail">
 						@else 
